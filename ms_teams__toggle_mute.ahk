@@ -1,3 +1,4 @@
+#NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
 SetTitleMatchMode 2 ; Changes the way AHK matches the window title to PARTIAL
 IfWinExist, Microsoft Teams ; If there's a Microsoft Teams Window...
 {     
