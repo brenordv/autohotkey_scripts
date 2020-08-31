@@ -13,9 +13,18 @@ else if WinActive("ahk_exe pycharm64.exe") {
     SendEvent {CtrlDown}{AltDown}i{CtrlUp}{AltUp}       ; Adjust indentation    
     ShowToast("Jetbrains PYCHARM: File cleaned up!", toast_title)
 }
+else if WinActive("ahk_exe datagrip64.exe") {
+    SendEvent {CtrlDown}{AltDown}l{CtrlUp}{AltUp}       ; Reformat code
+    SendEvent {CtrlDown}{AltDown}i{CtrlUp}{AltUp}       ; Adjust indentation    
+    ShowToast("Jetbrains DATAGRIP: File cleaned up!", toast_title)
+}
+else if WinActive("ahk_exe Code.exe") {
+    SendEvent {ShiftDown}{AltDown}f{ShiftUp}{AltUp}     ; Reformat code    
+    ShowToast("Microsoft VS Code: File cleaned up!", toast_title)
+}
 else if WinActive("ahk_exe devenv.exe") {
-    Send {CtrlDown}k{CtrlUp}{CtrlDown}d{CtrlUp} ; Reformat code + adjust indentation
-    Send {CtrlDown}r{CtrlUp}{AltDown}g{AltUp}  ; Optimize imports
+    Send {CtrlDown}k{CtrlUp}{CtrlDown}d{CtrlUp}         ; Reformat code + adjust indentation
+    Send {CtrlDown}r{CtrlUp}{AltDown}g{AltUp}           ; Optimize imports
     ShowToast("Microsoft VS: File cleaned up!", toast_title)
 }
 

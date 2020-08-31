@@ -25,7 +25,7 @@ Have fun.
 
 - ```play_pause_toggle.ahk```: Uses the Play/Pause media key. Good if you have extra keys on your Keyboard.
 
-- ```all_in_one__clean_up.ahk```: Uses the shortcuts to reformat code and optimize imports for Visual Studio and JetBrains Rider.
+- ```all_in_one__clean_up.ahk```: Uses the shortcuts to reformat code and optimize imports for Visual Studio, Visual Stucio Code, Rider, PyCharm and Datagrip.
 
 ## Lib
 The lib is folder with auxiliary functions that can be used on any other script.
